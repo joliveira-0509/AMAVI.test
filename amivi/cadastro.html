@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <title>Cadastro Usuário</title>
+</head>
+<body>
+    <div class="center">
+        <div class="box">
+            <div class="input-container">
+                <form>
+                    <label for="nome">Nome: <input type="text" id="nome" name="nome"> </label>
+                    <br>
+                    <label for="sobreNome">Sobre Nome: <input type="text" name="sobreNome" id="sobreNome"> </label>
+                    <br>
+                    <label for="numero">Telf1: <input type="tel" name="telf1" id="telf1" pattern="\\d{2} \\d{5}-\\d{4}" placeholder="(69) 91234-5678"> </label>
+                    <br>
+                    <label for="numero">Telf2: <input type="tel" name="telf2" id="telf2" pattern="\\d{2} \\d{5}-\\d{4}" placeholder="(69) 91234-5678"> </label>
+                    <br>
+                    <label for="cpf"> CPF:<input type="text" id="cpf" name="cpf" pattern="\\d{3}\\.\\d{3}\\.\\d{3}-\\d{2}" placeholder="123.456.789-00"></label>
+                </form>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="form-group">
+            <input type="text" placeholder="Full Name">
+            <label class="form-label">Nome:</label>
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="E-mail">
+            <label class="form-label">Nome:</label>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgba(253, 253, 253, 0.863);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+h1 {
+    text-align: center;
+    background-position: center;
+    font-size: 100px;
+    font-weight: bold;
+    text-transform:uppercase;
+    background: url("img/logo2.jpg");
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    backdrop-filter: blur(15px);
+    background: rgba(255,255,255,0.2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 10px;
+}
+
+form input {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+
+
+.botao {
+    background-color: blue;
+    border: solid 5px blue ;
+    border-radius: 20px;
+    color: white;
+    padding: 15px 200px;
+    text-align:center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    align-items: center;
+    width: 25%;
+}
+
+.botao:hover{
+    background-color: blue;
+    color: white;
+    transform: scale(1.1)
+}
+body{
+    background-color: black;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-flow: column;
+}
+.form-group{
+    position: relative;
+    margin:12px;
+}
+.form-group input{
+    padding: 8px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: #acacac solid 2px;
+    background-color: transparent;
+    color: #eee;
+    transition: 0.15s all ease;
+}
+.form-group input:focus{
+    border-color: #eee;
+}
+.form-group input::placeholder{
+    color: transparent;
+}
+.form-group .form-label{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    font-size: 18px;
+    padding: 0 10px;
+    color:#acacac;
+    pointer-events: none;
+    transition: 0.15s all ease;
+}
+.form-group input:focus + .form-label,
+.form-group input:not(:placeholder-shown)+
+.form-label{
+    transform: translate(5px, -22px);
+    background-color: black;
+    font-size: 14px;
+    color: #eee;
+}
